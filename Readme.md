@@ -46,7 +46,7 @@ Replicates unix find command
 
 or
 
-`.find --[pattern] [value]` for the binary
+`./find [path] --[pattern] [value]` for the binary
 
 ### Patterns
 
