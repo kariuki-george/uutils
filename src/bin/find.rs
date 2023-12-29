@@ -4,7 +4,6 @@
 use clap::Parser;
 use std::path::Path;
 
-
 // Find implementation to search for files
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]

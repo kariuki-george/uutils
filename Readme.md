@@ -42,11 +42,11 @@ Replicates unix find command
 
 ### To run
 
-`cargo run --bin find   --[pattern] [value]`
+`cargo run --bin find [starting_path]  --[pattern] [value]`
 
 or
 
-`./find [path] --[pattern] [value]` for the binary
+`./find [starting_path] --[pattern] [value]` for the binary
 
 ### Patterns
 
@@ -54,3 +54,19 @@ or
 - name
 
 * all patterns are optional
+
+## Grep
+
+Replicates unix find command
+
+### To run
+
+`cargo run --bin grep [path(s)]  --[pattern] [value]`
+
+or
+
+`./grep [path(s)] --[pattern] [value]` for the binary
+
+### Patterns
+
+- input
