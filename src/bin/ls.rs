@@ -1,8 +1,7 @@
-/// Lists all the contents of a directory
-
-use std::{ env, path };
 use chalk::colors::Colors::*;
 use chalk::Chalk;
+/// Lists all the contents of a directory
+use std::{env, path};
 
 fn main() {
     // Get the file from the user
@@ -25,10 +24,8 @@ fn main() {
         match entry {
             Ok(entry) => {
                 if entry.path().is_dir() {
-                    let colored_entry = Chalk::new(
-                        Blue,
-                        entry.file_name().to_str().unwrap()
-                    ).color();
+                    let colored_entry =
+                        Chalk::new(Blue, entry.file_name().to_str().unwrap()).color();
                     print!("{} ", colored_entry);
                 } else {
                     print!("{} ", entry.file_name().to_str().unwrap());
